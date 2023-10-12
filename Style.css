@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;;
+}
+
+body {
+    height: 85vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: -webkit-linear-gradient(top, hsla(241, 72%, 63%, 1), hsla(235, 72%, 49%, 1));
+    width: 23rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    padding: 0.8rem;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.circle {
+    background: -webkit-linear-gradient(top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 12.5rem;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0.8rem;
+    align-items: center;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 4.3rem;
+    font-weight: 800;
+    margin: 1.8rem 0 -0.3rem 0;
+}
+h1, h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+}   
+
+.postscript {
+    text-align: center;
+    margin: -0.5rem 0 2.5rem 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 18px;
+    opacity: 0.5;
+    color: hsl(241, 100%, 89%);
+}
+
+.top {
+    margin: 1.7rem 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.top , .postscript {
+    color: hsl(241, 100%, 89%);
+    opacity: 0.9;
+}
+
+.list {
+    box-shadow: 40px 20px 60px rgba(0, 0, 0, 0.055);
+    width: 26rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin: -3rem;
+    padding: 0.4rem;
+    font-size: 1.1rem;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.summary {
+    font-size: 1.5rem;
+    margin: 1.9rem 0rem 1rem -9.1rem;
+    font-weight: 800;
+}
+
+.property {
+    margin-right: auto;
+    padding-left: 15px;
+}
+
+.Reaction {
+    background: hsla(0, 100%, 67%, 0.05);
+    color: hsl(0, 100%, 67%);
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -2rem 0 0;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.Memory {
+    background: hsla(39, 100%, 56%, 0.05);;
+    color: hsl(39, 100%, 56%);
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -2rem 0 0;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.Verbal {
+    background: hsla(166, 100%, 37%, 0.05);
+    color: hsl(166, 100%, 37%);
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -2rem 0 0;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.Visual {
+    background: hsl(234, 85%, 45%, 0.05);
+    color: hsl(234, 85%, 45%);
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -2rem 0 0;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+button {
+    background: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 1.1rem;
+    width: 18rem;
+    height: 3.5rem;
+    margin: 1.5rem -2rem 0 0;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+button:active {
+    background: -webkit-linear-gradient(top, hsla(241, 72%, 64%, 1), hsla(241, 72%, 52%, 1));
+}
+
+/* Mobile-Design */
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 23.5rem;
+        height: 24rem;
+        gap: 1.5rem;
+        margin: -1.7rem 0rem 0rem 0;
+        padding: 0.8rem;
+        border-radius: 2rem;
+    }
+
+    .top {
+        font-size: 18px;
+        margin: 2.35rem 0 0 0;
+    }
+
+    .circle {
+        width: 8.8rem;
+        height: 8.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin: 0.7rem 0 0 0;
+    }
+    
+    h4 {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .postscript {
+        text-align: center;
+        margin: -0.9rem 0 2.5rem 0;
+        font-size: 16px;
+        font-weight: 500;
+        width: 17rem;
+    }
+
+    .summary {
+        font-size: 18px;
+        margin: 0.6rem 7.8rem 0.6rem -5rem;
+    }
+
+    .list {
+        height: 32rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0rem 1.9rem 0rem 0;
+        padding: 0.9rem;
+        font-size: 1rem;
+        align-items: center;
+        border-radius: 2rem;
+    }
+   
+    .Reaction {
+        width: 19.8rem;
+        padding: 1.1rem;
+    }
+    
+    .Memory {
+        width: 19.8rem;
+        padding: 1.1rem;
+    }
+    
+    .Verbal {
+        width: 19.8rem;
+        padding: 1.1rem;
+    }
+    
+    .Visual {
+        width: 19.8rem;
+        padding: 1.1rem;
+    }
+    
+    button {
+        width: 19.8rem;
+        margin: 0.6rem -2rem 0 0;
+    }
+}
